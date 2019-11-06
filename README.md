@@ -1,5 +1,7 @@
 # Generate JSON WEB TOKEN with C# 
 
+Generates/Mints a JWT and prints it to shell's standard output.
+
 ## Information brief jwt-csharp-netcore
 - Program write on Visual studio 2017, Console App (Core)
 - Used .net core 3.0 (.net core 2.2 is option)
