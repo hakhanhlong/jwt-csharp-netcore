@@ -23,11 +23,11 @@
   ```
 - Type for Run:
   ``` bash
-    dotnet run --key=e:/jwtprivate.key --issuer=0098bef0-c3644110-9a8f-4021-b361-c3060de235f6
+    dotnet run --key=e:/jwtprivate.key --issuer_id=0098bef0-c3644110-9a8f-4021-b361-c3060de235f6
   ```
   or
   ``` bash
-    dotnet run --key=e:/jwtprivate.key --issuer=0098bef0-c3644110-9a8f-4021-b361-c3060de235f6 --username=hklong
+    dotnet run --key=e:/jwtprivate.key --issuer_id=0098bef0-c3644110-9a8f-4021-b361-c3060de235f6 --username=hklong
   ```
 
 
@@ -43,7 +43,7 @@
     ```
   - Run:
    ``` bash
-       jwt-csharp-core.exe --key=<private key path> --issuer=<your issuer id>
+       jwt-csharp-core.exe --key=<private key path> --issuer_id=<your issuer id>
    ```
 
 ## Publish for Mac OS usaged under command line (build the code to an executable)
@@ -58,7 +58,7 @@
     ```
   - Run:
    ``` bash
-       dotnet jwt-csharp-core.dll --key=<private key path> --issuer=<your issuer id>
+       dotnet jwt-csharp-core.dll --key=<private key path> --issuer_id=<your issuer id>
    ```
 ## Publish for Ubuntu OS usaged under command line (build the code to an executable)
 - Build to .exe
@@ -72,7 +72,7 @@
     ```
 - Run:
    ``` bash
-       dotnet jwt-csharp-core.dll --key=<private key path> --issuer=<your issuer id>
+       dotnet jwt-csharp-core.dll --key=<private key path> --issuer_id=<your issuer id>
    ```
 
 

@@ -20,13 +20,13 @@ namespace jwt_csharp_netcore
             _builderHelp.AppendLine("* jwt-csharp.exe(-h | --help)");
             _builderHelp.AppendLine("* Options:");
             _builderHelp.AppendLine("*  --key=<str>       path to private key");
-            _builderHelp.AppendLine("*  --issuer=<str>    issuer id from api connsole");
-            _builderHelp.AppendLine("*  --username=<str>  username if generating user token");
-            _builderHelp.AppendLine("*  --expire=<int>  exprire time by seconds default = 1800");
+            _builderHelp.AppendLine("*  --issuer_id=<str>    issuer id from api connsole");
+            _builderHelp.AppendLine("*  --username=<str>  username if generating user token");            
             _builderHelp.AppendLine("*  -h --help Show this screen.");
         }
 
-        List<string> Param_Header = new List<string>() { "--key", "--issuer", "--username", "--expire", "-h" };
+        //List<string> Param_Header = new List<string>() { "--key", "--issuer_id", "--username", "--expire", "-h" };
+        List<string> Param_Header = new List<string>() { "--key", "--issuer_id", "--username", "-h" };
 
         public void PrintHelp()
         {
@@ -54,7 +54,7 @@ namespace jwt_csharp_netcore
                                 PrivateKeyPath = params_arr[1];
 
                             }
-                            if (_arg.Contains("--issuer"))
+                            if (_arg.Contains("--issuer_id"))
                             {
                                 Issuer = params_arr[1];
                             }
@@ -64,10 +64,10 @@ namespace jwt_csharp_netcore
                                 Username = params_arr[1];
                             }
 
-                            if (_arg.Contains("--expire"))
-                            {
-                                ExpireTime = Convert.ToInt32(params_arr[1]);
-                            }
+                            //if (_arg.Contains("--expire"))
+                            //{
+                            //    ExpireTime = Convert.ToInt32(params_arr[1]);
+                            //}
                         }
                         else
                         {
